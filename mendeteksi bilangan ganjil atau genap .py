@@ -1,10 +1,8 @@
-def cek_genap_atau_ganjil(bilangan):
-    if bilangan % 2 == 0:
-        return "Genap"
-    else:
-        return "Ganjil"
+# Input dari pengguna
+bilangan = int(input("Masukkan bilangan: "))
 
-# Contoh penggunaan
-bilangan = int(input("Masukkan sebuah bilangan: "))
-hasil = cek_genap_atau_ganjil(bilangan)
-print(f"Bilangan {bilangan} adalah {hasil}.")
+# Logika untuk menentukan ganjil atau genap
+if bilangan % 2 == 0:
+    print(f"{bilangan} adalah bilangan genap")
+else:
+    print(f"{bilangan} adalah bilangan ganjil")
